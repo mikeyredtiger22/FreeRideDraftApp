@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="spikey.com.freeride.TaskSelectionFragment">
+
+    <!--
+    The default texts given to the text elements are just to see
+    in the preview for easier layout changes. These elements
+    should all be over-written in the java class when initialised.
+    -->
+
+    <TextView
+        android:id="@+id/mapBottomPanel_title_start_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="Title / Start Location" />
+
+    <TextView
+        android:id="@+id/mapBottomPanel_end_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/mapBottomPanel_title_start_location"
+        android:text="End Location" />
+
+    <TextView
+        android:id="@+id/mapBottomPanel_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/mapBottomPanel_end_location"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/mapBottomPanel_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/mapBottomPanel_time"
+        android:text="Distance" />
+
+    <TextView
+        android:id="@+id/mapBottomPanel_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/mapBottomPanel_distance"
+        android:text="Extra" />
+
+    <Button
+        android:id="@+id/mapsBottomPanel_raised_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="BUTTON"/>
+
+    <Button
+        android:id="@+id/mapsBottomPanel_flat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/mapsBottomPanel_raised_button"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:text="BUTTON"/>
+
+</RelativeLayout>
