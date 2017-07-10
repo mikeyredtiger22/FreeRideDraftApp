@@ -8,10 +8,7 @@
 
 
     <fragment
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/map"
+        android:id="@+id/map_fragment"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -20,9 +17,9 @@
 
 
     <fragment
-        android:id="@+id/firstBottomPanelTest"
-        class="spikey.com.freeride.MapsBottomPanel"
-        tools:layout="@layout/fragment_maps_bottom_panel"
+        android:id="@+id/task_selection_fragment"
+        class="spikey.com.freeride.TaskSelectionFragment"
+        tools:layout="@layout/fragment_task_selection"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
