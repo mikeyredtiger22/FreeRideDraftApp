@@ -8,6 +8,7 @@ import android.location.Location;
 
 public class Task {
 
+    //todo: switch to LatLng?
     private Location startLocation;
     private Location endLocation;
 
@@ -18,6 +19,8 @@ public class Task {
 
     public Task(double startLatitude, double startLongitude,
                 double endLatitude, double endLongitude) {
+        startLocation = new Location(this.toString());
+        endLocation = new Location(this.toString());
 
         startLocation.setLatitude(startLatitude);
         startLocation.setLongitude(startLongitude);
